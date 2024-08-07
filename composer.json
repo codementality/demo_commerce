@@ -11,7 +11,6 @@
     "drupal/commerce_cart_api": "^1.0",
     "drupal/commerce_cart_flyout": "1.9.0",
     "drupal/commerce_demo": "1.x-dev",
-    "drupal/swiftmailer": "^2.0",
     "drupal/token": "^1.0"
   }
 }
