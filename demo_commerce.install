@@ -75,7 +75,8 @@ function demo_commerce_install() {
   $store_storage = \Drupal::entityTypeManager()->getStorage('commerce_store');
   $stores = $store_storage->loadMultiple();
   $store = reset($stores);
-  $store_storage->markAsDefault($store);
+  $store->setDefault(TRUE);
+  $store->save();
 
   foreach (['simple', 'clothing'] as $product_type) {
     $display = commerce_get_entity_display('commerce_product', $product_type, 'view');
